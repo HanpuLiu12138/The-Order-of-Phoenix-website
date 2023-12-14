@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:black;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Set a higher z-index for the header */
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#logo {
+    max-width: 100px; /* Adjust the max-width as needed */
+    height: auto; /* To maintain aspect ratio */
+    display: inline-block; /* To prevent the logo from breaking to a new line */
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+#content {
+    margin: 20px;}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Set a higher z-index for the main navigation */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav.secondary {
+    background-color: #444;
+    padding: 0.5em 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Set a lower z-index for the secondary navigation */
+}
+
+nav.secondary a {
+    display: block;
+    margin: 0;
+}
+
+nav:hover .secondary {
+    display: block;
+}
+
+#swiper-container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 0; /* Set a lower z-index for the Swiper */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.website-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 2; /* Set a higher z-index for the website cards container */
+}
+
+.website-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.website-card img {
+    width: 100%;
+    height: auto;
+}
+
+.website-info {
+    padding: 1em;
+}
+
+.website-info h2 {
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    z-index: 2; /* Set a higher z-index for the footer */
+}
